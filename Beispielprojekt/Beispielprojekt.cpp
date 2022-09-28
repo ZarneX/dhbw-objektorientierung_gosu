@@ -78,7 +78,18 @@ public:
 				graphics().draw_rect(enemies.at(i).x, enemies.at(i).y, 5, 5, Gosu::Color::WHITE, 0);
 			}
 
-			graphics().draw_line(current_shot.start_x, current_shot.start_y, Gosu::Color::RED, current_shot.end_x, current_shot.end_y, Gosu::Color::RED, 0);
+			if (input().down(Gosu::KB_LEFT)) {
+				graphics().draw_line(400, 300, Gosu::Color::WHITE, 370, 330, Gosu::Color::WHITE, 0);
+			}
+			else if (input().down(Gosu::KB_RIGHT)) {
+				graphics().draw_line(400, 300, Gosu::Color::WHITE, 430, 270, Gosu::Color::WHITE, 0);
+			}
+			else if (input().down(Gosu::KB_UP)) {
+				graphics().draw_line(400, 300, Gosu::Color::WHITE, 370, 270, Gosu::Color::WHITE, 0);
+			}
+			else if (input().down(Gosu::KB_DOWN)) {
+				graphics().draw_line(400, 300, Gosu::Color::WHITE, 430, 330, Gosu::Color::WHITE, 0);
+			}
 		}
 		else if (game_over) {
 			Gosu::Font font(50);
@@ -118,7 +129,6 @@ public:
 
 
 	int frame_counter = 0;
-	shot current_shot;
 	// Wird 60x pro Sekunde aufgerufen
 	void update() override
 	{
@@ -145,23 +155,7 @@ public:
 			}
 
 			if (frame_counter == 0) {
-				float delta_x = input().mouse_x() - 400.0;
-				float delta_y = input().mouse_y() - 300.0;
-				delta_x = 100.0 * delta_x;// / sqrt(delta_x * delta_x + delta_y * delta_y);
-				delta_y = 100.0 * delta_y;// / sqrt(delta_x * delta_x + delta_y * delta_y);
-				current_shot = shot(400, 400.0 + delta_x, 300, 300.0 + delta_y);
-
-				for (size_t i = 0; i < enemies.size(); i++) {
-					if (floor(delta_x / (enemies.at(i).x - 400.0 + 2.5) / 100.0) == floor(delta_y / (enemies.at(i).y - 300.0 + 2.5) / 100.0)) {
-						enemies.erase(enemies.begin() + i);
-						points++;
-					}
-
-				}
-			}
-
-			if (frame_counter == 10) {
-				current_shot = shot(400, 400, 300, 300);
+				
 			}
 
 			if (input().down(Gosu::KB_W) && input().down(Gosu::KB_A)) {
