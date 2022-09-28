@@ -32,11 +32,11 @@ public:
 
 	vector<enemy> enemies;
 	int points = 0;
-	int lives = 0;
+	int lives = 6;
 	bool hit = false;
 	int hit_counter = 0;
 	bool game_over = false;
-	bool game_start = true;
+	bool game_start = false;
 
 	// Wird bis zu 60x pro Sekunde aufgerufen.
 	// Wenn die Grafikkarte oder der Prozessor nicht mehr hinterherkommen,
@@ -82,10 +82,11 @@ public:
 		}
 		else if (game_over) {
 			Gosu::Font font(50);
-			font.draw_text_rel("Game Over", 400, 245, 0, 0.5, 0.5);
+			font.draw_text_rel("Game Over", 400, 200, 0, 0.5, 0.5);
 
 			Gosu::Font font_retry(30);
 
+			font_retry.draw_text_rel("Points: " + to_string(points), 400, 250, 0, 0.5, 0.5, 1.0, 1.0, Gosu::Color::WHITE);
 
 			if (input().mouse_x() > 352 && input().mouse_x() < 448 && input().mouse_y() > 282 && input().mouse_y() < 328) {
 				font_retry.draw_text_rel("Retry", 400, 305, 0, 0.5, 0.5, 1.0, 1.0, Gosu::Color::BLACK);
@@ -100,7 +101,18 @@ public:
 
 		}
 		else if (!game_start) {
+			Gosu::Font font_start(30);
 
+			if (input().mouse_x() > 322 && input().mouse_x() < 478 && input().mouse_y() > 282 && input().mouse_y() < 328) {
+				font_start.draw_text_rel("Start Game", 400, 305, 0, 0.5, 0.5, 1.0, 1.0, Gosu::Color::BLACK);
+				graphics().draw_rect(320, 280, 160, 50, Gosu::Color::BLACK, -2);
+				graphics().draw_rect(322, 282, 156, 46, Gosu::Color::WHITE, -2);
+			}
+			else {
+				font_start.draw_text_rel("Start Game", 400, 305, 0, 0.5, 0.5, 1.0, 1.0, Gosu::Color::WHITE);
+				graphics().draw_rect(320, 280, 160, 50, Gosu::Color::WHITE, -2);
+				graphics().draw_rect(322, 282, 156, 46, Gosu::Color::BLACK, -2);
+			}
 		}
 	}
 
@@ -220,6 +232,16 @@ public:
 				lives = 6;
 				points = 0;
 				hit = false;
+			}
+		}
+
+		if (!game_start) {
+			if (input().down(Gosu::MS_LEFT) && input().mouse_x() > 322 && input().mouse_x() < 478 && input().mouse_y() > 282 && input().mouse_y() < 328) {
+				game_over = false;
+				lives = 6;
+				points = 0;
+				hit = false;
+				game_start = true;
 			}
 		}
 	}
