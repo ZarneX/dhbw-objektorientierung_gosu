@@ -20,9 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="rakete.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="Walk_DownRight2.png">
       <Filter>Resource Files</Filter>
     </Image>
@@ -57,6 +54,66 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Walk_DownRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_UpRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_UpRight2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_UpRight3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_DownLeft1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_DownLeft2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_DownLeft3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_DownRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_DownRight2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_DownRight3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_UpLeft1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_UpLeft2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtWalk_UpLeft3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtIdle_UpLeft1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtIdle_UpRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtIdle_DownLeft1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtIdle_DownRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Idle_UpLeft1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Idle_UpRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Idle_DownLeft1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Idle_DownRight1.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

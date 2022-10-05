@@ -171,7 +171,26 @@
     <ClCompile Include="Beispielprojekt.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="rakete.png" />
+    <Image Include="HurtIdle_DownLeft1.png" />
+    <Image Include="HurtIdle_DownRight1.png" />
+    <Image Include="HurtIdle_UpLeft1.png" />
+    <Image Include="HurtIdle_UpRight1.png" />
+    <Image Include="HurtWalk_DownLeft1.png" />
+    <Image Include="HurtWalk_DownLeft2.png" />
+    <Image Include="HurtWalk_DownLeft3.png" />
+    <Image Include="HurtWalk_DownRight1.png" />
+    <Image Include="HurtWalk_DownRight2.png" />
+    <Image Include="HurtWalk_DownRight3.png" />
+    <Image Include="HurtWalk_UpLeft1.png" />
+    <Image Include="HurtWalk_UpLeft2.png" />
+    <Image Include="HurtWalk_UpLeft3.png" />
+    <Image Include="HurtWalk_UpRight1.png" />
+    <Image Include="HurtWalk_UpRight2.png" />
+    <Image Include="HurtWalk_UpRight3.png" />
+    <Image Include="Idle_DownLeft1.png" />
+    <Image Include="Idle_DownRight1.png" />
+    <Image Include="Idle_UpLeft1.png" />
+    <Image Include="Idle_UpRight1.png" />
     <Image Include="Walk_DownLeft1.png" />
     <Image Include="Walk_DownLeft2.png" />
     <Image Include="Walk_DownLeft3.png" />
