@@ -171,19 +171,19 @@
     <ClCompile Include="Beispielprojekt.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_DownLeft1.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_DownLeft2.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_DownLeft3.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_DownRight1.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_DownRight2.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_DownRight3.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_UpLeft1.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_UpLeft2.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_UpLeft3.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_UpRight1.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_UpRight2.png" />
-    <Image Include="..\..\..\..\Downloads\Game Sprites\Walk_UpRight3.png" />
     <Image Include="rakete.png" />
+    <Image Include="Walk_DownLeft1.png" />
+    <Image Include="Walk_DownLeft2.png" />
+    <Image Include="Walk_DownLeft3.png" />
+    <Image Include="Walk_DownRight1.png" />
+    <Image Include="Walk_DownRight2.png" />
+    <Image Include="Walk_DownRight3.png" />
+    <Image Include="Walk_UpLeft1.png" />
+    <Image Include="Walk_UpLeft2.png" />
+    <Image Include="Walk_UpLeft3.png" />
+    <Image Include="Walk_UpRight1.png" />
+    <Image Include="Walk_UpRight2.png" />
+    <Image Include="Walk_UpRight3.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

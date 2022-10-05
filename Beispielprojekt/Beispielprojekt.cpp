@@ -12,6 +12,7 @@ public:
 
 	GameWindow()
 		: Window(800, 600)
+		, walk_anim("Walk_DownRight1.png")
 	{
 		set_caption("Gosu Tutorial mit Git");
 	}
@@ -38,6 +39,8 @@ public:
 	bool game_over = false;
 	bool game_start = false;
 
+	Gosu::Image walk_anim;
+
 	// Wird bis zu 60x pro Sekunde aufgerufen.
 	// Wenn die Grafikkarte oder der Prozessor nicht mehr hinterherkommen,
 	// dann werden `draw` Aufrufe ausgelassen und die Framerate sinkt
@@ -46,7 +49,8 @@ public:
 		if (!game_over && game_start) {
 
 			if (hit == false) {
-				graphics().draw_rect(395, 295, 10, 10, Gosu::Color::WHITE, 1);
+				//graphics().draw_rect(395, 295, 10, 10, Gosu::Color::WHITE, 1);
+				walk_anim.draw(385, 285, 1);
 			}
 			else {
 				graphics().draw_rect(395, 295, 10, 10, Gosu::Color::RED, 1);
@@ -129,9 +133,20 @@ public:
 
 
 	int frame_counter = 0;
+	string current_directionY = "Down";
+	string current_directionX = "Right";
 	// Wird 60x pro Sekunde aufgerufen
 	void update() override
 	{
+		if ((int)(frame_counter * 1.5) % 60 > 45)
+			walk_anim = Gosu::Image("Walk_" + current_directionY + current_directionX + "3.png");
+		else if ((int)(frame_counter * 1.5) % 60 > 30)
+			walk_anim = Gosu::Image("Walk_" + current_directionY + current_directionX + "1.png");
+		else if ((int)(frame_counter * 1.5) % 60 > 15)
+			walk_anim = Gosu::Image("Walk_" + current_directionY + current_directionX + "2.png");
+		else if ((int)(frame_counter * 1.5) % 60 > 0)
+			walk_anim = Gosu::Image("Walk_" + current_directionY + current_directionX + "1.png");
+
 		if (lives == 0) {
 			game_over = true;
 			enemies.clear();
@@ -159,45 +174,57 @@ public:
 			}
 
 			if (input().down(Gosu::KB_W) && input().down(Gosu::KB_A)) {
+				current_directionY = "Up";
+				current_directionX = "Left";
 				for (size_t i = 0; i < enemies.size(); i++) {
 					enemies.at(i).y = enemies.at(i).y + 1.2 / sqrt(2.0);
 					enemies.at(i).x = enemies.at(i).x + 1.2 / sqrt(2.0);
 				}
 			}
 			else if (input().down(Gosu::KB_W) && input().down(Gosu::KB_D)) {
+				current_directionY = "Up";
+				current_directionX = "Right";
 				for (size_t i = 0; i < enemies.size(); i++) {
 					enemies.at(i).y = enemies.at(i).y + 1.2 / sqrt(2.0);
 					enemies.at(i).x = enemies.at(i).x - 1.2 / sqrt(2.0);
 				}
 			}
 			else if (input().down(Gosu::KB_S) && input().down(Gosu::KB_A)) {
+				current_directionY = "Down";
+				current_directionX = "Left";
 				for (size_t i = 0; i < enemies.size(); i++) {
 					enemies.at(i).y = enemies.at(i).y - 1.2 / sqrt(2.0);
 					enemies.at(i).x = enemies.at(i).x + 1.2 / sqrt(2.0);
 				}
 			}
 			else if (input().down(Gosu::KB_S) && input().down(Gosu::KB_D)) {
+				current_directionY = "Down";
+				current_directionX = "Right";
 				for (size_t i = 0; i < enemies.size(); i++) {
 					enemies.at(i).y = enemies.at(i).y - 1.2 / sqrt(2.0);
 					enemies.at(i).x = enemies.at(i).x - 1.2 / sqrt(2.0);
 				}
 			}
 			else if (input().down(Gosu::KB_W)) {
+				current_directionY = "Up";
 				for (size_t i = 0; i < enemies.size(); i++) {
 					enemies.at(i).y = enemies.at(i).y + 1.2;
 				}
 			}
 			else if (input().down(Gosu::KB_S)) {
+				current_directionY = "Down";
 				for (size_t i = 0; i < enemies.size(); i++) {
 					enemies.at(i).y = enemies.at(i).y - 1.2;
 				}
 			}
 			else if (input().down(Gosu::KB_A)) {
+				current_directionX = "Left";
 				for (size_t i = 0; i < enemies.size(); i++) {
 					enemies.at(i).x = enemies.at(i).x + 1.2;
 				}
 			}
 			else if (input().down(Gosu::KB_D)) {
+				current_directionX = "Right";
 				for (size_t i = 0; i < enemies.size(); i++) {
 					enemies.at(i).x = enemies.at(i).x - 1.2;
 				}
