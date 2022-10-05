@@ -171,6 +171,19 @@
     <ClCompile Include="Beispielprojekt.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Enemy_DownLeft1.png" />
+    <Image Include="Enemy_DownLeft2.png" />
+    <Image Include="Enemy_DownLeft3.png" />
+    <Image Include="Enemy_DownRight1.png" />
+    <Image Include="Enemy_DownRight2.png" />
+    <Image Include="Enemy_DownRight3.png" />
+    <Image Include="Enemy_UpLeft1.png" />
+    <Image Include="Enemy_UpLeft2.png" />
+    <Image Include="Enemy_UpLeft3.png" />
+    <Image Include="Enemy_UpRight1.png" />
+    <Image Include="Enemy_UpRight2.png" />
+    <Image Include="Enemy_UpRight3.png" />
+    <Image Include="Grass_Tile.png" />
     <Image Include="HurtIdle_DownLeft1.png" />
     <Image Include="HurtIdle_DownRight1.png" />
     <Image Include="HurtIdle_UpLeft1.png" />

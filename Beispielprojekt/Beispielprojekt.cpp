@@ -13,18 +13,18 @@ public:
 	GameWindow()
 		: Window(800, 600)
 		, walk_anim("Walk_DownRight1.png")
-		, up_right1("Walk_UpRight1.png")
-		, up_right2("Walk_UpRight2.png")
-		, up_right3("Walk_UpRight3.png")
-		, up_left1("Walk_UpLeft1.png")
-		, up_left2("Walk_UpLeft2.png")
-		, up_left3("Walk_UpLeft3.png")
-		, down_right1("Walk_DownRight1.png")
-		, down_right2("Walk_DownRight2.png")
-		, down_right3("Walk_DownRight3.png")
-		, down_left1("Walk_DownLeft1.png")
-		, down_left2("Walk_DownLeft2.png")
-		, down_left3("Walk_DownLeft3.png")
+		, up_right1("Enemy_UpRight1.png")
+		, up_right2("Enemy_UpRight2.png")
+		, up_right3("Enemy_UpRight3.png")
+		, up_left1("Enemy_UpLeft1.png")
+		, up_left2("Enemy_UpLeft2.png")
+		, up_left3("Enemy_UpLeft3.png")
+		, down_right1("Enemy_DownRight1.png")
+		, down_right2("Enemy_DownRight2.png")
+		, down_right3("Enemy_DownRight3.png")
+		, down_left1("Enemy_DownLeft1.png")
+		, down_left2("Enemy_DownLeft2.png")
+		, down_left3("Enemy_DownLeft3.png")
 
 	{
 		set_caption("Gosu Tutorial mit Git");
@@ -314,7 +314,7 @@ public:
 				enemies.at(i).x = 400.0 + delta_x - 2.5;
 				enemies.at(i).y = 300.0 + delta_y - 2.5;
 
-				if (frame_counter % 15 == 0) {
+				if (frame_counter % 10 == 0) {
 					enemies.at(i).walk_count = (enemies.at(i).walk_count + 1) % 4;
 				}
 
