@@ -155,5 +155,101 @@
     <Image Include="Grass_Tile.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Attack_DownRight2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_DownRight3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_DownRight4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_DownRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_DownRight2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_DownRight3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_DownRight4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_DownRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_DownLeft3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_DownLeft4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_DownLeft1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_DownLeft2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_DownLeft3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_DownLeft4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_DownLeft1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_DownLeft2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_UpLeft4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_UpRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_UpRight2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_UpRight3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_UpRight4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_UpLeft1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_UpLeft2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_UpLeft3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_UpLeft4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_UpRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_UpRight2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_UpRight3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_UpRight4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_UpLeft1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_UpLeft2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="HurtAttack_UpLeft3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

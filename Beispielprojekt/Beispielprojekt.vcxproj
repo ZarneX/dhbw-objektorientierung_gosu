@@ -171,6 +171,22 @@
     <ClCompile Include="Beispielprojekt.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Attack_DownLeft1.png" />
+    <Image Include="Attack_DownLeft2.png" />
+    <Image Include="Attack_DownLeft3.png" />
+    <Image Include="Attack_DownLeft4.png" />
+    <Image Include="Attack_DownRight1.png" />
+    <Image Include="Attack_DownRight2.png" />
+    <Image Include="Attack_DownRight3.png" />
+    <Image Include="Attack_DownRight4.png" />
+    <Image Include="Attack_UpLeft1.png" />
+    <Image Include="Attack_UpLeft2.png" />
+    <Image Include="Attack_UpLeft3.png" />
+    <Image Include="Attack_UpLeft4.png" />
+    <Image Include="Attack_UpRight1.png" />
+    <Image Include="Attack_UpRight2.png" />
+    <Image Include="Attack_UpRight3.png" />
+    <Image Include="Attack_UpRight4.png" />
     <Image Include="Enemy_DownLeft1.png" />
     <Image Include="Enemy_DownLeft2.png" />
     <Image Include="Enemy_DownLeft3.png" />
@@ -184,6 +200,22 @@
     <Image Include="Enemy_UpRight2.png" />
     <Image Include="Enemy_UpRight3.png" />
     <Image Include="Grass_Tile.png" />
+    <Image Include="HurtAttack_DownLeft1.png" />
+    <Image Include="HurtAttack_DownLeft2.png" />
+    <Image Include="HurtAttack_DownLeft3.png" />
+    <Image Include="HurtAttack_DownLeft4.png" />
+    <Image Include="HurtAttack_DownRight1.png" />
+    <Image Include="HurtAttack_DownRight2.png" />
+    <Image Include="HurtAttack_DownRight3.png" />
+    <Image Include="HurtAttack_DownRight4.png" />
+    <Image Include="HurtAttack_UpLeft1.png" />
+    <Image Include="HurtAttack_UpLeft2.png" />
+    <Image Include="HurtAttack_UpLeft3.png" />
+    <Image Include="HurtAttack_UpLeft4.png" />
+    <Image Include="HurtAttack_UpRight1.png" />
+    <Image Include="HurtAttack_UpRight2.png" />
+    <Image Include="HurtAttack_UpRight3.png" />
+    <Image Include="HurtAttack_UpRight4.png" />
     <Image Include="HurtIdle_DownLeft1.png" />
     <Image Include="HurtIdle_DownRight1.png" />
     <Image Include="HurtIdle_UpLeft1.png" />
