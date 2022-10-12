@@ -251,5 +251,59 @@
     <Image Include="HurtAttack_UpLeft3.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Half_Heart.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Stamina_Bar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Attack_Bar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Empty_Heart.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Full_Heart.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Titlescreen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="GameOver.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack11.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack10.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SuperAttack7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
