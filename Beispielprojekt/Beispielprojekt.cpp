@@ -571,26 +571,26 @@ public:
 						attack_meter = min(attack_meter + 1, 100);
 					}
 					if (current_directionX == "Left" && current_directionY == "Down" &&
-						enemies.at(i).x < 1000.0 && enemies.at(i).y > 520.0 && sqrt(delta_x * delta_x + delta_y * delta_y) < 30.0) {
+						enemies.at(i).x < 960.0 && enemies.at(i).y > 520.0 && sqrt(delta_x * delta_x + delta_y * delta_y) < 30.0) {
 						enemies.erase(enemies.begin() + i);
 						points++;
 						attack_meter = min(attack_meter + 1, 100);
 					}
 					if (current_directionX == "Right" && current_directionY == "Up" &&
-						enemies.at(i).x > 940.0 && enemies.at(i).y < 580.0 && sqrt(delta_x * delta_x + delta_y * delta_y) < 30.0) {
+						enemies.at(i).x > 940.0 && enemies.at(i).y < 540.0 && sqrt(delta_x * delta_x + delta_y * delta_y) < 30.0) {
 						enemies.erase(enemies.begin() + i);
 						points++;
 						attack_meter = min(attack_meter + 1, 100);
 					}
 					if (current_directionX == "Left" && current_directionY == "Up" &&
-						enemies.at(i).x < 1000.0 && enemies.at(i).y < 580.0 && sqrt(delta_x * delta_x + delta_y * delta_y) < 30.0) {
+						enemies.at(i).x < 960.0 && enemies.at(i).y < 540.0 && sqrt(delta_x * delta_x + delta_y * delta_y) < 30.0) {
 						enemies.erase(enemies.begin() + i);
 						points++;
 						attack_meter = min(attack_meter + 1, 100);
 					}
 				}
 
-				if (super_attack && sqrt(delta_x * delta_x + delta_y * delta_y) < 30.0) {
+				if (super_attack && sqrt(delta_x * delta_x + delta_y * delta_y) < 40.0) {
 					enemies.erase(enemies.begin() + i);
 					points++;
 					attack_meter = min(attack_meter + 1, 100);
