@@ -37,18 +37,18 @@ public:
 		set_caption("Gosu Tutorial mit Git");
 	}
 
-	Gosu::Image up_right1;// = Gosu::Image("Walk_UpRight1");
-	Gosu::Image up_right2;// = Gosu::Image("Walk_UpRight2");
-	Gosu::Image up_right3;// = Gosu::Image("Walk_UpRight3");
-	Gosu::Image up_left1; //= Gosu::Image("Walk_UpLeft1");
-	Gosu::Image up_left2; //= Gosu::Image("Walk_UpLeft2");
-	Gosu::Image up_left3; //= Gosu::Image("Walk_UpLeft3");
-	Gosu::Image down_right1;// = Gosu::Image("Walk_DownRight1");
-	Gosu::Image down_right2;// = Gosu::Image("Walk_DownRight2");
-	Gosu::Image down_right3;// = Gosu::Image("Walk_DownRight3");
-	Gosu::Image down_left1;// = Gosu::Image("Walk_DownLeft1");
-	Gosu::Image down_left2;// = Gosu::Image("Walk_DownLeft2");
-	Gosu::Image down_left3;// = Gosu::Image("Walk_DownLeft3");
+	Gosu::Image up_right1;
+	Gosu::Image up_right2;
+	Gosu::Image up_right3;
+	Gosu::Image up_left1; 
+	Gosu::Image up_left2; 
+	Gosu::Image up_left3; 
+	Gosu::Image down_right1;
+	Gosu::Image down_right2;
+	Gosu::Image down_right3;
+	Gosu::Image down_left1;
+	Gosu::Image down_left2;
+	Gosu::Image down_left3;
 
 	Gosu::Image grass;
 
@@ -67,14 +67,6 @@ public:
 		float x;
 		float y;
 		int walk_count;
-	};
-
-	struct shot
-	{
-		float start_x;
-		float end_x;
-		float start_y;
-		float end_y;
 	};
 
 	vector<enemy> enemies;
